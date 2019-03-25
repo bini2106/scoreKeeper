@@ -1,0 +1,138 @@
+.winner {
+	color: #bf901a;
+}
+
+body{
+	background: url(https://images.unsplash.com/photo-1494931216633-3f436bf43829?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+	background-size: cover;
+	background-position: center;
+	padding: 10% 10%;
+	font-family: 'Rubik', sans-serif;
+}
+
+.move{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	margin-top: 100px;
+	animation: 1s slidefade 1s forwards;
+
+	
+}
+
+
+html {
+	height: 100%;
+}
+
+p{
+	font-size: 20px;
+}
+
+
+.first{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	color: white;
+}
+
+.second{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 300px;
+	height: 200px;
+	justify-content: center;
+	align-items: center;
+}
+
+input{
+	text-decoration: none;
+	margin-bottom: 30px;
+	height: 40px;
+	width: 200px;
+	border-radius: 20px;
+	background-color: #2b5291;
+	color: white;
+	font-size: 25px; 
+	box-shadow: 0 3px #293fad;
+}
+
+input:focus{
+	outline:none;
+	background-color: #0c244c;
+	box-shadow: none;
+	top: 3px;
+}
+
+#b1{
+	margin-bottom: 20px;
+	cursor: pointer;
+	width:130px;
+	height:40px;
+}
+#b1:hover{
+	box-shadow: 0 3px #634887;
+    top: 1px;
+}
+
+#b1:active{
+	box-shadow: none;
+	top: 3px;
+}
+
+#b2{
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#b2:hover{
+	box-shadow: 0 3px #634887;
+    top: 1px;
+}
+
+#b2:active{
+	box-shadow: none;
+	top: 3px;
+}
+
+#reset{
+	cursor: pointer;
+}
+#reset:hover{
+	box-shadow: 0 3px #634887;
+    top: 1px;
+}
+
+#reset:active{
+	box-shadow: none;
+	top: 3px;
+}
+
+#b1, #b2, #reset{
+	background-color: #75569e;
+	color: white;
+	border-radius: 10px;
+	width:130px;
+	height:40px;
+	display: block;
+    position: relative;
+	outline: none;
+ 	border: none;
+ 	box-shadow: 0 4px #634887;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
